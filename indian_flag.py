@@ -1,5 +1,6 @@
+import turtle as tr
 
-def cirimg(x,y,z,col1):
+def cirimg(x, y, z, col1):
     tt.begin_fill()
     tt.fillcolor(col1)
     tt.fd(x)
@@ -11,42 +12,43 @@ def cirimg(x,y,z,col1):
     tt.fd(z)
     tt.left(y)
     tt.end_fill()
-import turtle as tr
-tt=tr.Turtle()
-tt.speed(20)
+
+tt = tr.Turtle()
+tt.speed(0)
 tt.pensize(5)
+tt.hideturtle()
+
 tt.penup()
 tt.goto(-150, 25)
 tt.pendown()
 cirimg(300, 90, 50, "orange")
-tt.penup()
-tt.goto(-150, 25)
-tt.pendown()
+
 tt.penup()
 tt.goto(-150, -25)
 tt.pendown()
 cirimg(300, 90, 50, "white")
+
 tt.penup()
 tt.goto(-150, -75)
-tt.setheading(0)
 tt.pendown()
 cirimg(300, 90, 50, "green")
+
 tt.penup()
 tt.goto(0, -25)
 tt.pendown()
 tt.pensize(2)
 tt.pencolor("navy")
 tt.circle(25)
+
 tt.penup()
 tt.goto(0, 0)
 tt.setheading(0)
 tt.pendown()
 tt.pensize(1)
+
 for _ in range(24):
     tt.forward(25)
     tt.backward(25)
     tt.left(15)
 
-
-
-
+tr.done()
