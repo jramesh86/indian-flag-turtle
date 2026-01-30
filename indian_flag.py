@@ -1,30 +1,4 @@
-'''def cirimg(x,y,z,col1):
-    tt.begin_fill()
-    tt.fillcolor(col1)
-    tt.fd(x)
-    tt.left(y)
-    tt.fd(z)
-    tt.left(y)
-    tt.fd(x)
-    tt.left(y)
-    tt.fd(z)
-    tt.left(y)
-    tt.end_fill()
-import turtle as tr
-tt=tr.Turtle()
-tt.speed(20)
-tt.pensize(5)
-cirimg(300,90,50,"orange")
-tt.goto(0,-50)
-cirimg(300,90,50,"white")
-tt.goto(0,-100)
-cirimg(300,90,50,"green")
-tt.up()
-tt.goto(150,-50)
-tt.down()
-tt.circle(25)
-tt.left(90)
-tt.fd(50)'''
+
 def cirimg(x,y,z,col1):
     tt.begin_fill()
     tt.fillcolor(col1)
@@ -72,6 +46,7 @@ for _ in range(24):
     tt.forward(25)
     tt.backward(25)
     tt.left(15)
+
 
 
 
